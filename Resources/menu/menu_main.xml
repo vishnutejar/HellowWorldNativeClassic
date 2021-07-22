@@ -1,9 +1,37 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+
+	<item
+      android:id="@+id/menu_home"
+      android:enabled="true"
+      android:icon="@drawable/ic_launcher"
+      android:title="tab1_title"
+      app:showAsAction="collapseActionView" />
+	<item
+      android:id="@+id/menu_home1"
+      android:enabled="true"
+      android:icon="@drawable/ic_launcher"
+      android:title="tab1_title"
+      app:showAsAction="ifRoom" />
+	<item
+      android:id="@+id/menu_home2"
+      android:enabled="true"
+      android:icon="@drawable/ic_launcher"
+      android:title="tab1_title"
+      app:showAsAction="ifRoom" />
+
+	<item
+		android:id="@+id/menu_audio"
+		android:enabled="true"
+		android:icon="@drawable/ic_launcher"
+		android:title="tab2_title"
+		app:showAsAction="ifRoom" />
+
+	<item
+		android:id="@+id/menu_video"
+		android:enabled="true"
+		android:icon="@drawable/ic_launcher"
+		android:title="tab3_title"
+		app:showAsAction="ifRoom" />
 </menu>

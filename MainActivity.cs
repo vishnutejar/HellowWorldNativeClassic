@@ -30,11 +30,11 @@ namespace HellowWorldNativeClassic
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
-            int id = item.ItemId;
-            if (id == Resource.Id.action_settings)
-            {
-                return true;
-            }
+            //int id = item.ItemId;
+            //if (id == Resource.Id.action_settings)
+            //{
+            //    return true;
+            //}
 
             return base.OnOptionsItemSelected(item);
         }
