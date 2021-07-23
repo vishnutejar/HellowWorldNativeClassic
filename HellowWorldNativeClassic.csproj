@@ -61,10 +61,13 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet.cs" />
     <Compile Include="frgs\Fragment1.cs" />
     <Compile Include="frgs\Fragment2.cs" />
     <Compile Include="HomeActivity.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Photo.cs" />
+    <Compile Include="PhotoAdapter.cs" />
     <Compile Include="RelativeLayoutActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -149,6 +152,14 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\layout_frg2.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\arc_de_triomphe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\item_layout_photos.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
