@@ -11,7 +11,7 @@ using System.Text;
 
 namespace HellowWorldNativeClassic
 {
-    [Activity(Label = "Screen1", MainLauncher = true)]
+    [Activity(Label = "Screen1", MainLauncher = false)]
     public class Screen1 : Activity
     {
         EditText userName, Passwrd;
@@ -27,6 +27,17 @@ namespace HellowWorldNativeClassic
             loginButton.Click += LoginButton_Click;
         }
 
+        protected override void OnStart()
+        {
+            base.OnStart();
+            Toast.MakeText(this,"Onstart",ToastLength.Short).Show();
+        }
+        protected override void OnResume()
+        {
+            base.OnResume();
+            Toast.MakeText(this, "Onstart", ToastLength.Short).Show();
+
+        }
         private void LoginButton_Click(object sender, EventArgs e)
         {
             string username, paswword;
